@@ -1,0 +1,12 @@
+---
+object_type: method
+version: 1.0
+object:
+  attributes:
+    name: AWS_EC2_Create_AMI_From_Instance
+    display_name: 
+    description: 
+    scope: instance
+    language: ruby
+    location: inline
+  inputs: []
