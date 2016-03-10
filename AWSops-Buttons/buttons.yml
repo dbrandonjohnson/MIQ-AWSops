@@ -1,0 +1,219 @@
+---
+:custom_buttons_sets:
+- name: AWS|Service|
+  description: AWS
+  set_type: CustomButtonSet
+  read_only: 
+  mode: 
+  custom_buttons:
+  - description: Add Availability Zone
+    applies_to_class: Service
+    applies_to_exp: 
+    options:
+      :button_image: 3
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Add Availability Zone
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_ELB_AvailabilityZone_Add
+      dialog_label: List Availability Zones
+  set_data:
+    :button_order:
+    - Add Availability Zone
+    :button_image: 2
+    :display: true
+    :group_index: 1
+- name: AWS ELB|Vm|
+  description: AWS ELB
+  set_type: CustomButtonSet
+  read_only: 
+  mode: 
+  custom_buttons:
+  - description: Add to an ELB
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 1
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Add to an ELB
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_ELB_Register_Instance
+      dialog_label: List Elastic Load Balancers in AWS
+  set_data:
+    :button_order:
+    - Add to an ELB
+    :button_image: 2
+    :display: true
+    :group_index: 1
+- name: AWS EBS|Vm|
+  description: AWS EBS
+  set_type: CustomButtonSet
+  read_only: 
+  mode: 
+  custom_buttons:
+  - description: Attach EBS Volume
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 6
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Attach EBS Volume
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_EBS_Volume_Attach
+      dialog_label: Attach EBS Volume to Instance
+  - description: Detach EBS Volume
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 8
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Detach EBS Volume
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_EBS_Volume_Detach
+      dialog_label: Detach and Delete EBS Volume From Instance
+  - description: Create and Attach EBS Volume
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 6
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Create and Attach EBS Volume
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_EBS_Volume_CreateAttach
+      dialog_label: Create and Attach EBS Volume to Instance
+  - description: Detach and Delete EBS Volume
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 7
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Detach and Delete EBS Volume
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_EBS_Volume_DetachDelete
+      dialog_label: Detach and Delete EBS Volume From Instance
+  - description: Snapshot EBS Volume
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 13
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Snapshot EBS Volume
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: AWS_EBS_Snapshot_Create
+      dialog_label: Create EBS Snapshot
+  - description: Delete Snapshot
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 8
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Delete Snapshot
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: ebs
+      dialog_label: Delete an EBS Snapshot
+  set_data:
+    :button_order:
+    - Attach EBS Volume
+    - Create and Attach EBS Volume
+    - Detach EBS Volume
+    - Detach and Delete EBS Volume
+    - Snapshot EBS Volume
+    - Delete Snapshot
+    :button_image: 6
+    :display: true
+    :group_index: 4
