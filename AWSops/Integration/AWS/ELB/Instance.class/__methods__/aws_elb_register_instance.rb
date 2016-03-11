@@ -6,6 +6,7 @@
 #
 # Notes: This method registers an instance an ELB Load Balancer and adds the VM to the associated ELB service in CloudForms
 #
+# Based on V2 of the AWS SDK
 # Inputs: dialog_elb_name (dynamic drop down refr to /#Domain/Integrations/AWS/ELB/Dialogs/AWS_ELB_LoadBalancer_List)
 #
 ###########################################

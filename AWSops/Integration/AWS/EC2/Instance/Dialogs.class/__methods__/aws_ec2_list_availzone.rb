@@ -16,7 +16,7 @@ begin
 
   dump_root()
 
-  require 'aws-sdk'
+  require 'aws-sdk-v1'
 
   aws = $evm.vmdb(:ems_amazon).first
 

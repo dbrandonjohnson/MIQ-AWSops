@@ -33,7 +33,7 @@ begin
   az_name = $evm.root['dialog_az_name'].to_s
 
   require 'rubygems'
-  require 'aws-sdk'
+  require 'aws-sdk-v1'
 
   aws = $evm.vmdb(:ems_amazon).first
 
