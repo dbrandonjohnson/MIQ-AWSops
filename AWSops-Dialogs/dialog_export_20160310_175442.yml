@@ -1,7 +1,7 @@
 ---
 - description: 
   buttons: submit,cancel
-  label: Create EBS Snapshot
+  label: AWSops_EBS_Create_Snpshot
   dialog_tabs:
   - description: 
     display: edit
@@ -91,7 +91,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Allocate EIP
+  label: AWSops_EIP_Allocate
   dialog_tabs:
   - description: 
     display: edit
@@ -145,7 +145,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Create ELB
+  label: AWSops_ELB_Create
   dialog_tabs:
   - description: 
     display: edit
@@ -419,7 +419,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Create VPC
+  label: AWSops_VPC_Create
   dialog_tabs:
   - description: 
     display: edit
@@ -511,7 +511,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Detach and Delete EBS Volume From Instance
+  label: AWSops_EBS_detach_delete_from_instance
   dialog_tabs:
   - description: 
     display: edit
@@ -565,7 +565,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Delete an EBS Snapshot
+  label: AWSops_EBS_delete_EBS_Snapshot
   dialog_tabs:
   - description: 
     display: edit
@@ -656,7 +656,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: List EIP
+  label: AWSops_EIP_List
   dialog_tabs:
   - description: 
     display: edit
@@ -710,7 +710,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: Create and Attach EBS Volume to Instance
+  label: AWSops_EBS_Create_Attach_Volume
   dialog_tabs:
   - description: 
     display: edit
@@ -807,7 +807,7 @@
           ae_attributes: {}
 - description: 
   buttons: submit,cancel
-  label: List Elastic Load Balancers in AWS
+  label: AWSops_ELB_List
   dialog_tabs:
   - description: 
     display: edit
